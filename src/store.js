@@ -25,7 +25,7 @@ store.init = function(params)
 	var store = params["store"];
 	
 	/* set name */
-	store.state.page.Home.name = "Test";
+	store.state.page.Home.pageTitle = "Блог";
 	
 	/* Items */
 	store.state.page.Crud.List.items =

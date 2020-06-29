@@ -1,5 +1,5 @@
 // склонение слов (метод 1)
-function decl1(intval, expr){
+export function decl1(intval, expr){
 	if(intval == null || typeof(intval) == 'undefined') intval = 1;
 	if(expr == null || typeof(expr) == 'undefined') expr = ['день', 'дня', 'дней'];
 	
@@ -21,7 +21,7 @@ function decl1(intval, expr){
 	return result;
 }
 // склонение слов (метод 2)
-function decl2(intval, expr){
+export function decl2(intval, expr){
 	if(intval == null || typeof(intval) == 'undefined') intval = 1;
 	if(expr == null || typeof(expr) == 'undefined') expr = ['день', 'дня', 'дней'];
 	

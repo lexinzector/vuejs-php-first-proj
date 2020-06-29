@@ -1,7 +1,3 @@
-<style>
-</style>
-
-
 <template>
 	<div class="page_crud">
 		<div class='page_crud__list'>
@@ -17,9 +13,10 @@
 	</div>
 </template>
 
+<style scoped>
+</style>
 
 <script>
-
 import Form from '../components/Form.vue'
 import List from '../components/List.vue'
 import { getById, findIndex } from '../lib.js'
