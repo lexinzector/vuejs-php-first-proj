@@ -1,5 +1,6 @@
+api/conf.php
 var
 node_modules
 vendor
-web
-api/conf.php
+dist
+v8-compile-cache-0
