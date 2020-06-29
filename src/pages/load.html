@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Site Template - Blog Page - Item</title>
+		
+		<!-- link.html start -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/bootstrap-flatly.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<!-- / link.html end -->
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="container">
+				<!-- header.html start -->
+				<div class="navbar navbar-default">
+					<div class="navbar-header">
+						<a href="index.html" class="navbar-brand">SiteTemplate</a>
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="navbar-collapse collapse" id="navbar-main">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="index.html">Блог</a>
+							</li>
+							<li>
+								<a href="load.html">Каталог файлов</a>
+							</li>
+							<li>
+								<a href="feedback.html">Обратная связь</a>
+							</li>
+							<li>
+								<a href="calc.html">Калькулятор</a>
+							</li>
+							<li>
+								<a href="static_page.html">Статичная страница</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="langs">
+									Язык
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="langs">
+									<li class="active">
+										<a href="index.html?lang=ru">Russian</a>
+									</li>
+									<li>
+										<a href="index.html?lang=kz">Kazakh</a>
+									</li>
+									<li>
+										<a href="index.html?lang=en">English</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- / header.html end -->
+				
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<!-- заголовок страницы start -->
+								Каталог файлов
+								<!-- / заголовок страницы end -->
+							</div>
+							<div class="panel-body">
+								<!-- содержимое страницы start -->
+								<ul class="list-group">
+									<li class="list-group-item">
+										<div class="row">
+											<div class="col-md-1 text-center">
+												<a href="#" target="_blank">
+													<img src="http://kdt.kz/img/fileformats/docx.png" width="50" height="50" />
+												</a>
+											</div>
+											<div class="col-md-6">
+												<div>
+													<b>33333</b>
+												</div>
+												<div>
+													<small>Последнее изменение: 22.03.2018</small>
+												</div>
+											</div>
+											<div class="col-md-5 text-right">
+												<a href="#" class="btn btn-info" target="_blank" style="color: #fff; margin-right: 10px;">Просмотр</a>
+												<a href="#" class="btn btn-success" style="color: #fff;" download>Скачать</a>
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="row">
+											<div class="col-md-1 text-center">
+												<a href="#" target="_blank">
+													<img src="http://kdt.kz/img/fileformats/png.png" width="50" height="50" />
+												</a>
+											</div>
+											<div class="col-md-6">
+												<div>
+													<b>33333</b>
+												</div>
+												<div>
+													<small>Последнее изменение: 22.03.2018</small>
+												</div>
+											</div>
+											<div class="col-md-5 text-right">
+												<a href="#" class="btn btn-success" style="color: #fff;" download>Скачать</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<!-- / содержимое страницы end -->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<!-- right.html start -->
+						<form action="search.html" method="get" style="margin-bottom: 20px;">
+							<input type="hidden" name="account" value="0123456789" />
+							<input type="text" name="text" class="form-control" value="" placeholder="Поиск" />
+						</form>
+						
+						<div class="panel panel-primary">
+							<div class="panel-heading">Навигация</div>
+							<div class="list-group">
+								<a href="index.html" class="list-group-item">Главная</a>
+								<a href="blog_list.html" class="list-group-item">Блог</a>
+								<a href="load.html" class="list-group-item">Каталог файлов</a>
+								<a href="feedback.html" class="list-group-item">Обратная связь</a>
+								<a href="calc.html" class="list-group-item">Калькулятор</a>
+								<a href="static_page.html" class="list-group-item">Статичная страница</a>
+								<a href="photogallery.html" class="list-group-item">Фотогалерея</a>
+								<a href="videogallery.html" class="list-group-item">Видеогалерея</a>
+							</div>
+						</div>
+						
+						<div class="row" style="font-size: 12px;">
+							<div class="col-md-6">
+								<div class="panel panel-default">
+									<div class="panel-heading">Статистика сайта</div>
+									<ul class="list-group">
+										<li class="list-group-item">
+											<span class="badge">0</span>
+											За месяц
+										</li>
+										<li class="list-group-item">
+											<span class="badge">0</span>
+											За неделю
+										</li>
+										<li class="list-group-item">
+											<span class="badge">0</span>
+											Вчера
+										</li>
+										<li class="list-group-item">
+											<span class="badge">0</span>
+											Сегодня
+										</li>
+										<li class="list-group-item">
+											<span class="badge">0</span>
+											Онлайн
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="panel panel-default">
+									<div class="panel-heading">Статистика платформы</div>
+									<ul class="list-group">
+										<li class="list-group-item">
+											<span class="badge">0</span>
+											За месяц
+										</li>
+										<li class="list-group-item">
+											<span class="badge">0</span>
+											За неделю
+										</li>
+										<li class="list-group-item">
+											<span class="badge">0</span>
+											Вчера
+										</li>
+										<li class="list-group-item">
+											<span class="badge">0</span>
+											Сегодня
+										</li>
+										<li class="list-group-item">
+											<span class="badge">0</span>
+											Онлайн
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- / right.html end -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer.html start -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+		(function(){
+			$(window).scroll(function(){
+				var top = $(document).scrollTop();
+				$('.splash').css({
+					'background-position': '0px -'+(top / 3).toFixed(2)+'px'
+				});
+				if(top > 50){
+					$('#home > .navbar').removeClass('navbar-transparent');
+				} else {
+					$('#home > .navbar').addClass('navbar-transparent');
+				}
+			});
+			$("a[href='#']").click(function(e){
+				e.preventDefault();
+			});
+		})();
+		</script>
+		<!-- / footer.html end -->
+
+	</body>
+</html>

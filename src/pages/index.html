@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Site Template - Blog Page - List</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-flatly.min.css" type="text/css" />
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	</head>
+	<body>
+		<div id="app" class="container">
+			<header-block
+				v-bind:sitename="siteName"
+				v-bind:menu="menuTop"
+			></header-block>
+			
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							{{pageTitle}}
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-12">
+									<blog-post
+										v-for="post in blogPosts"
+										v-bind:key="post.id"
+										v-bind:post="post"
+									></blog-post>
+									
+									<div class="text-center">
+										<ul class="pagination">
+											<li v-for="p in pagination.pages" @click.prevent="setPage(p)" v-bind:class="{active: p == pagination.currentPage}">
+												<a href="javascript://">{{p}}</a>
+											</li>
+										</ul>
+										<div>Показано с {{pagination.startIndex + 1}} по {{pagination.endIndex + 1}} из {{blogPostsCount}} записей</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<form v-on:submit.prevent="setPage(1)" style="margin-bottom: 20px;">
+						<input type="text" v-model="blogPostsSearchText" class="form-control" placeholder="Поиск" />
+					</form>
+					
+					<menu-right
+						title="Навигация"
+						v-bind:menu="menuRight"
+					></menu-right>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/vue"></script>
+		<!--<script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+		<script src="assets/js/date.format.js"></script>
+		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/index.js"></script>
+	</body>
+</html>
