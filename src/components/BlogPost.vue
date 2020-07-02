@@ -2,7 +2,7 @@
 	<div class="panel panel-default blog-post">
 		<img class="img-responsive" v-bind:src="post.poster" v-if="post.poster" />
 		<div class="panel-heading" style="font-size: 23px;">
-			<a v-bind:href="post.url">{{post.title}}</a>
+			<router-link :to="{path: post.url}">{{post.title}}</router-link>
 		</div>
 		<div class="panel-body">
 			<p>{{post.cutcontent}}</p>
@@ -17,7 +17,7 @@
 					<span><i class="fa fa-eye" style="margin-right: 10px;"></i>{{post.viewsText}}</span>
 				</div>
 			</div>
-			<a v-bind:href="post.url" class="btn btn-primary">Читать далее</a>
+			<router-link :to="{path: post.url}" class="btn btn-primary">Читать далее</router-link>
 		</div>
 	</div>
 </template>

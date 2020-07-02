@@ -1,7 +1,7 @@
 <template>
 	<div class="navbar navbar-default">
 		<div class="navbar-header">
-			<a href="#/" class="navbar-brand">{{sitename}}</a>
+			<router-link :to="{path: '/'}" class="navbar-brand">{{sitename}}</router-link>
 			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -11,7 +11,7 @@
 		<div class="navbar-collapse collapse" id="navbar-main">
 			<ul class="nav navbar-nav">
 				<li v-for="item in menu">
-					<a v-bind:href="item.url">{{item.name}}</a>
+					<router-link :to="{path: item.url}">{{item.name}}</router-link>
 				</li>
 			</ul>
 		</div>
